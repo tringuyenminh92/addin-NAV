@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Manifest>
+  <Resources>
+    <Script>jquery-2.1.4.min.js</Script>
+    <Script>angular.min.js</Script>
+    <Script>highcharts.js</Script>
+    <Script>MyApp.js</Script>
+    <Script>mainController.js</Script>
+  </Resources>
+  <Script>
+    <![CDATA[
+      $(document).ready(function(){ 
+         document.getElementById("controlAddIn").innerHTML = '<div id="mainDiv">
+           <div id="LSx4yChart" ng-controller="lsx4yChartController" ng-init="initLSxChart();"></div>
+           <div id="XFourChart" ng-controller="xfourChartController" ng-init="initXFourChart();"></div>
+           <div id="allPlatformsYTDChart" ng-controller="allPlatformsYTDController" ng-init="initAllPlatformsYTDChart();"></div>
+         </div>';
+         Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ControlAddInReady', null);
+       });
+    ]]>
+  </Script>
+  <RequestedHeight>500</RequestedHeight>
+  <RequestedWidth>700</RequestedWidth>
+  <VerticalStretch>true</VerticalStretch>
+  <HorizontalStretch>true</HorizontalStretch>
+</Manifest>

@@ -1,0 +1,7 @@
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\bin\Debug\Charts.BarChart.dll
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\bin\Debug\Charts.BarChart.pdb
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.dll
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.xml
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\obj\Debug\Charts.BarChart.csprojResolveAssemblyReference.cache
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\obj\Debug\Charts.BarChart.dll
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\Charts.BarChart\obj\Debug\Charts.BarChart.pdb

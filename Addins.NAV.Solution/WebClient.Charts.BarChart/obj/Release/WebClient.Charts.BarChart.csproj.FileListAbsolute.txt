@@ -1,0 +1,5 @@
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\WebClient.Charts.BarChart\bin\WebClient.Charts.BarChart.dll.config
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\WebClient.Charts.BarChart\bin\WebClient.Charts.BarChart.dll
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\WebClient.Charts.BarChart\bin\WebClient.Charts.BarChart.pdb
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\WebClient.Charts.BarChart\obj\Release\WebClient.Charts.BarChart.dll
+C:\Users\BeGa\Documents\Visual Studio 2013\Projects\NAVAddins\Addins.NAV.Solution\WebClient.Charts.BarChart\obj\Release\WebClient.Charts.BarChart.pdb
