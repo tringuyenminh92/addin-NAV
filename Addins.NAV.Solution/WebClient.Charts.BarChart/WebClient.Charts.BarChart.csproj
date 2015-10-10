@@ -58,19 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Build\manifest.xml" />
-    <Content Include="Build\Scripts\mainController.js" />
-    <Content Include="Build\Scripts\MyApp.js" />
-    <Content Include="Build\Scripts\angular.min.js" />
-    <Content Include="Build\Scripts\bootstrap.min.js" />
-    <Content Include="Build\Scripts\canvas-tools.js" />
-    <Content Include="Build\Scripts\export-csv.js" />
-    <Content Include="Build\Scripts\exporting.js" />
-    <Content Include="Build\Scripts\highcharts-export-clientside.js" />
-    <Content Include="Build\Scripts\highcharts.js" />
-    <Content Include="Build\Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Build\Scripts\jspdf.js" />
-    <Content Include="Build\Scripts\ui-bootstrap-tpls.min.js" />
-    <Content Include="Build\Scripts\ui-bootstrap.min.js" />
+    <Content Include="Build\Script\MyApp.js" />
+    <Content Include="Build\Script\angular.min.js" />
+    <Content Include="Build\Script\bootstrap.min.js" />
+    <Content Include="Build\Script\canvas-tools.js" />
+    <Content Include="Build\Script\export-csv.js" />
+    <Content Include="Build\Script\exporting.js" />
+    <Content Include="Build\Script\highcharts-export-clientside.js" />
+    <Content Include="Build\Script\highcharts.js" />
+    <Content Include="Build\Script\jquery-2.1.4.min.js" />
+    <Content Include="Build\Script\jspdf.js" />
+    <Content Include="Build\Script\ui-bootstrap-tpls.min.js" />
+    <Content Include="Build\Script\ui-bootstrap.min.js" />
     <Content Include="Build\StyleSheets\bootstrap.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

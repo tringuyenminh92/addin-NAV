@@ -1,20 +1,7 @@
-﻿/*************************************************************
- *
- *	Created By: Nguyen Minh Tri - UR81HC
- *  Created Date: 23-09-2015
- *	Description: add comment header
- *	
- *	Modified By: Nguyen Minh Tri - UR81HC
- *	Modified Date: 23-09-2015
- *	Description: demo controller for stacked column chart
- *
- *************************************************************/
-
-
-angular.module("GlobalModule").controller("lsx4yChartController", lsx4yChartController);
-lsx4yChartController.$inject = ['$scope'];
-
-function lsx4yChartController($scope) {
+﻿
+var app;
+(function () {
+   app =angular.module("GlobalModule",[]).controller('lsx4yChartController',['$scope',function ($scope) {
 
     $scope.initLSxChart = function () {
         $('#LSx4yChart').highcharts({
@@ -97,10 +84,12 @@ function lsx4yChartController($scope) {
         });
     };
 
-}
+}]);
 
 
-angular.module("GlobalModule").controller("xfourChartController", xfourChartController);
+
+
+app.controller("xfourChartController", xfourChartController);
 xfourChartController.$inject = ['$scope'];
 
 function xfourChartController($scope) {
@@ -183,8 +172,7 @@ function xfourChartController($scope) {
 
 }
 
-
-angular.module("GlobalModule").controller("allPlatformsYTDController", allPlatformsYTDController);
+app.controller("allPlatformsYTDController", allPlatformsYTDController);
 allPlatformsYTDController.$inject = ['$scope'];
 
 function allPlatformsYTDController($scope) {
@@ -283,3 +271,5 @@ function allPlatformsYTDController($scope) {
     };
 
 }
+
+})();
