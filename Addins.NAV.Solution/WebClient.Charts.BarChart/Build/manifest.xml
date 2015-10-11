@@ -4,16 +4,14 @@
   <Resources>
     <Script>jquery-2.1.4.min.js</Script>
     <Script>angular.min.js</Script>
+    <Script>ui-bootstrap.min.js</Script>
+    <Script>ui-bootstrap-tpls.min.js</Script>
     <Script>highcharts.js</Script>
     <Script>MyApp.js</Script>
   </Resources>
   <Script>
     <![CDATA[
-      $(document).ready(function(){ 
-        document.getElementById("controlAddIn").innerHTML = '<div id="mainDiv"><div id="LSx4yChart" data-ng-controller="lsx4yChartController" data-ng-init="initLSxChart();"></div><div id="XFourChart" data-ng-controller="xfourChartController" data-ng-init="initXFourChart();"></div><div id="allPlatformsYTDChart" data-ng-controller="allPlatformsYTDController" data-ng-init="initAllPlatformsYTDChart();"></div></div>';
-        angular.bootstrap(document, ['GlobalModule']);
-	Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ControlAddInReady', null);
-       });
+      initView();
     ]]>
   </Script>
   <RequestedHeight>1250</RequestedHeight>

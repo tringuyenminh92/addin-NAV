@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Build\manifest.xml" />
+    <Content Include="Build\Script\highcharts-ng.min.js" />
+    <Content Include="Build\Script\mainController.js" />
     <Content Include="Build\Script\MyApp.js" />
     <Content Include="Build\Script\angular.min.js" />
     <Content Include="Build\Script\bootstrap.min.js" />

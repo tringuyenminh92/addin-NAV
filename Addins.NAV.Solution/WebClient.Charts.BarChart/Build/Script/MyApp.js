@@ -1,275 +1,144 @@
-﻿
-var app;
+﻿/*************************************************************
+ *
+ *	Created By: Nguyen Minh Tri - UR81HC
+ *  Created Date: 03-04-2015
+ *	Description: Global script to define basic functions and root angularjs module
+ *	
+ *************************************************************/
+
 (function () {
-   app =angular.module("GlobalModule",[]).controller('lsx4yChartController',['$scope',function ($scope) {
 
-    $scope.initLSxChart = function () {
-        $('#LSx4yChart').highcharts({
-            chart: {},
-            title: {
-                text: 'LSx 4.y'
-            },
-            xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Total'],
-                crosshair: true,
-                title: {
-                    text: 'Date'
-                }
-            },
-            yAxis: [
-                {
-                    min: 0,
-                    title: {
-                        text: 'Quantity'
-                    },
-                    stackLabels: { enabled: true }
-                },
-                {
-                    min: 0,
-                    title: {
-                        text: 'Quantity'
-                    },
-                    stackLabels: { enabled: false },
-                    opposite: true
-                }
-            ],
-            tooltip: {
-                shared: true
-            },
-            legend: {},
-            plotOptions: {
-                column: {
-                    stacking: 'normal',
-                    dataLabels: {
-                        enabled: true,
-                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black'
-                    }
-                }
-            },
-            series: [
-                {
-                    name: 'LSU + ADV',
-                    type: 'column',
-                    yAxis: 0,
-                    data: [13, 29, 36, 16, 18, 19, 43, 76, 44, 25, 23, 17],
-                    color: '#4169e1'
-                },
-                {
-                    name: 'LSF 4.x',
-                    type: 'column',
-                    yAxis: 0,
-                    data: [19, 24, 35, 12, 35, 7, 33, 64, 33, 77, 32, 13],
-                    color: '#a52a2a'
-                },
-                {
-                    name: 'Total/Month',
-                    type: 'spline',
-                    data: [32, 53, 71, 28, 53, 26, 76, 140, 77, 102, 55, 30]
-                },
-                {
-                    name: 'Total LSU & ADV',
-                    type: 'column',
-                    yAxis: 1,
-                    data: [null, null, null, null, null, null, null, null, null, null, null, null, 359],
-                    color: '#4169e1'
-                },
-                {
-                    name: 'Total LSF 4.x',
-                    type: 'column',
-                    yAxis: 1,
-                    data: [null, null, null, null, null, null, null, null, null, null, null, null, 384],
-                    color: '#a52a2a'
-                }
-            ]
-        });
-    };
-
-}]);
-
-
-
-
-app.controller("xfourChartController", xfourChartController);
-xfourChartController.$inject = ['$scope'];
-
-function xfourChartController($scope) {
-    $scope.initXFourChart = function () {
-        $('#XFourChart').highcharts({
-            chart: {},
-            title: {
-                text: 'XFour and LSU 5.1'
-            },
-            xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Total'],
-                crosshair: true,
-                title: { text: 'Date' }
-            },
-            yAxis: [
-                {
-                    min: 0,
-                    title: {
-                        text: 'Quantity'
-                    },
-                    stackLabels: { enabled: true }
-                },
-                {
-                    min: 0,
-                    title: {
-                        text: 'Quantity'
-                    },
-                    stackLabels: { enabled: false },
-                    opposite: true
-                }
-            ],
-            tooltip: { shared: true },
-            legend: {},
-            plotOptions: {
-                column: {
-                    stacking: 'normal',
-                    dataLabels: {
-                        enabled: true,
-                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black'
-                    }
-                }
-            },
-            series: [
-                {
-                    name: 'LSU 5.1',
-                    type: 'column',
-                    yAxis: 0,
-                    data: [13, 29, 36, 16, 18, 19, 43, 76, 44, 25, 23, 17, 0],
-                    color: '#30889A'
-                },
-                {
-                    name: 'XFour',
-                    type: 'column',
-                    yAxis: 0,
-                    data: [19, 24, 35, 12, 35, 7, 33, 64, 33, 77, 32, 13, 0],
-                    color: '#E5700F'
-                },
-                {
-                    name: 'Total/Month',
-                    type: 'spline',
-                    data: [32, 53, 71, 28, 53, 26, 76, 140, 77, 102, 55, 30]
-                },
-                {
-                    name: 'Total XFour',
-                    type: 'column',
-                    yAxis: 1,
-                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 384],
-                    color: '#30889A'
-                },
-                {
-                    name: 'Total LSU',
-                    type: 'column',
-                    yAxis: 1,
-                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 359],
-                    color: '#E5700F'
-                }
-            ]
-        });
-    };
-
-}
-
-app.controller("allPlatformsYTDController", allPlatformsYTDController);
-allPlatformsYTDController.$inject = ['$scope'];
-
-function allPlatformsYTDController($scope) {
-
-    $scope.initAllPlatformsYTDChart = function () {
-
-        $('#allPlatformsYTDChart').highcharts({
-            chart: { type: 'pie' },
-            title: {
-                text: 'All Platforms YTD'
-            },
-            xAxis: {
-                categories: [' ', '  ', '   ', '    ']
-            },
-            yAxis: {
-                gridLineColor: 'transparent',
-                minorGridLineWidth: 0,
-                labels: {
-                    enabled: false
-                },
-                title: {
-                    text: null
-                },
-                stackLabels: { enabled: false }
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        format: '{point.name} <br /> {point.percentage:.0f} %',
-                        style: {
-                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                        }
-                    }
-                },
-                column: {
-                    stacking: 'normal',
-                    maxPointWidth: 100,
-                    dataLabels: {
-                        enabled: true,
-                        formatter: function () {
-                            if (this.point.percentage === 0) {
-                                return ' ';
-                            }
-                            return this.series.name + '<br />'+ ((this.point.total * this.point.percentage) / 100).toFixed(0);
-                        },
-                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black'
-                    }
-                }
-            },
-            series: [
-                {
-                    type: 'column',
-                    name: 'EGS-PMx',
-                    data: [null, null, 40, null],
-                    color: '#4299B0'
-                },
-                {
-                    type: 'column',
-                    name: 'EGS-NX',
-                    data: [null, null, 18, null],
-                    color: '#DD8340'
-                },
-                {
-                    name: " ",
-                    data: [
-                        {
-                            name: "EGS xyz",
-                            y: 58,
-                            sliced: true,
-                            color: '#95A8CF'
-                        }, {
-                            name: "LSF 4.x",
-                            y: 4,
-                            color: '#4672AD'
-                        }, {
-                            name: "LSU + ADV",
-                            y: 17,
-                            color: '#AA4644'
-                        }, {
-                            name: "Xfour",
-                            y: 16,
-                            color: '#8AA64E'
-                        }, {
-                            name: "LSU 5,1",
-                            y: 5,
-                            color: '#72578C'
-                        }
-                    ]
-                }
-            ]
-        });
-
-    };
-
-}
+    angular.module("GlobalModule", ['ui.bootstrap', 'highcharts-ng']);
+    angular.module("GlobalModule").run(rootModal);
+    angular.module("GlobalModule").factory('modalService', modalService);
+    angular.module("GlobalModule").factory('notifyService', notifyService);
+    angular.module("GlobalModule").factory('shareService', shareService);
 
 })();
+
+// Controller xu ly cac thao tac cua message Modal
+function messageModalController($scope, $modalInstance, data) {
+
+    //set data in modal scope
+    $scope.myData = data;
+
+    $scope.ok = function () {
+        //Close and Pass return result
+        $modalInstance.close($scope.myData);
+    };
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+}
+
+angular.module("GlobalModule").controller("messageModalController", messageModalController);
+messageModalController.$inject = ['$scope', '$modalInstance', 'data']; //Storing modal object in rootScope for calling in controllers
+
+
+rootModal.$inject = ['$rootScope', '$modal'];
+function rootModal($rootScope, $modal) {
+
+    $rootScope.ShowModal = function (funcOk, funcCancel, passData) {
+
+        var modalInstance = $modal.open({
+            templateUrl: passData.Template || 'messageModal.html',
+            backdrop: 'static',
+            keyboard: false,
+            controller: passData.Controller || 'messageModalController',
+            size: passData.Size || 'sm',
+            resolve: {
+                data: function () { return passData; }
+            }
+        });
+
+        modalInstance.result.then(funcOk, funcCancel);
+    };
+}
+
+//Wait-Dialog class to show Processing message in modal
+function WaitDialog(modalContent) {
+
+    modalContent = modalContent || "Processing...";
+    var pleaseWaitDiv = $('<div class="modal fade" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="basicModal" aria-hidden="true" tabindex="-1"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"><h4>' + modalContent + '</h4></div><div class="modal-body"><div class="progress progress-striped active"><div class="progress-bar" style="width: 100%;"/></div></div></div></div></div>');
+
+    this.Show = function () {
+        pleaseWaitDiv.modal();
+    }
+    this.Hide = function () {
+        pleaseWaitDiv.modal('hide');
+    }
+}
+
+//Service to call Modal
+modalService.$inject = ['$modal'];
+function modalService($modal) {
+
+    var serviceObject = {};
+    serviceObject.ShowModal = function (funcOk, funcCancel, passData) {
+
+        var modalInstance = $modal.open({
+            templateUrl: passData.Template || 'gridModal.html',
+            backdrop: 'static',
+            keyboard: false,
+            controller: passData.Controller || 'gridModalController',
+            size: passData.Size || 'lg',
+            resolve: {
+                data: function () { return passData; }
+            }
+        });
+
+        modalInstance.result.then(funcOk, funcCancel);
+    };
+
+    return serviceObject;
+}
+
+
+//Service to show notification message
+notifyService.$inject = ['$rootScope'];
+function notifyService($rootScope) {
+
+    'use strict';
+
+    $rootScope.queue = [];
+
+    var serviceObject = {};
+
+    serviceObject.add = function (item) {
+        $rootScope.queue.push(item);
+        setTimeout(function () {
+            // remove the alert after 2000 ms
+            $('.alerts .alert').eq(0).remove();
+            $rootScope.queue.shift();
+        }, 3000);
+    },
+
+    serviceObject.pop = function () {
+        $rootScope.queue.pop();
+    };
+
+    return serviceObject;
+
+}
+
+
+//Share data service
+shareService.$inject = ['$rootScope'];
+function shareService($rootScope) {
+
+    var serviceObject = {};
+
+    //Publish event
+    serviceObject.RaiseEvent = function (sender, data) {
+        $rootScope.$broadcast(sender, { item: data });
+    };
+
+    //subscribe event for current controller
+    serviceObject.OnEvent = function ($scope, sender, handler) {
+        $scope.$on(sender, function (event, args) {
+            handler(args.item);
+        });
+    };
+
+    return serviceObject;
+}
